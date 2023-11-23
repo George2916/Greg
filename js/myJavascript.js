@@ -1,3 +1,21 @@
+/* add italicised text to top of index.html */
+
+$(document).ready(function(){
+  if($( window ).width() < 768){
+      $(".classAA").css('font-style', 'italic').text("Click on a photo for more information about it.");
+  }else{    
+     $(".classAA").css('font-style', 'italic').text("Click on a photo to view an enlarged version.");
+      
+  }
+});
+$( window ).resize(function() {
+ if($( window ).width() < 768){
+      $(".classAA").css('font-style', 'italic').text("Click on a photo for more information about it.");
+  }else{
+      $(".classAA").css('font-style', 'italic').text("Click on a photo to view an enlarged version.");
+  }
+});
+
 /* activate Previous and Next buttons that appear in the modals */
 
 $("div[id^='myModal']").each(function(){
