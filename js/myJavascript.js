@@ -41,12 +41,12 @@ $("div[id^='myModal']").each(function(){
   function mySetupFunction() {
     if ($(window).width() <= 767) {
         $('.BBB').css('visibility', 'visible');
-        $('.AAA').css('visibility', 'hidden');
+        $('.AAA').css('visibility', 'hidden');        
     }
     
     else {
         $('.BBB').css('visibility', 'hidden');
-        $('.AAA').css('visibility', 'visible');
+        $('.AAA').css('visibility', 'visible');        
     }
 }
 
