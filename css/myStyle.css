@@ -79,6 +79,9 @@ a img:hover {
 
 /* styling for tailend.html */
 
+
+.pic-back {display: none;}
+
 #gagivBody {
   background: #00FFFF;
   border-radius: 8px;
@@ -211,3 +214,9 @@ input:checked + .page .back {
     height:99vh;
   }
 } 
+
+.CCC {
+  
+  margin-top: -40px;
+ padding-bottom: 20px;
+}

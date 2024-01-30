@@ -35,3 +35,65 @@ $("div[id^='myModal']").each(function(){
     });
   
   });
+
+/* java for tailend.html */
+
+  function mySetupFunction() {
+    if ($(window).width() <= 767) {
+        $('.BBB').css('visibility', 'visible');
+        $('.AAA').css('visibility', 'hidden');
+    }
+    
+    else {
+        $('.BBB').css('visibility', 'hidden');
+        $('.AAA').css('visibility', 'visible');
+    }
+}
+
+$(document).ready(mySetupFunction);
+$(window).resize(mySetupFunction);
+
+  
+function sixPageFirstFlip() {
+  var x = document.getElementById("page1of6");  
+  var y = document.getElementById("page2of6");
+  x.style.display = "none"; 
+  y.style.display = "block";
+}
+
+function sixPageSecondFlip() {
+  var x = document.getElementById("page2of6");
+  var y = document.getElementById("page3of6");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function sixPageThirdFlip() {
+  var x = document.getElementById("page3of6");
+  var y = document.getElementById("page4of6");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function sixPageFourthFlip() {
+  var x = document.getElementById("page4of6");
+  var y = document.getElementById("page5of6");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function sixPageFifthFlip() {
+  var x = document.getElementById("page5of6");
+  var y = document.getElementById("page6of6");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+function sixPageUnflip() {
+  var x = document.getElementById("page6of6");
+  var y = document.getElementById("page1of6");
+  x.style.display = "none";
+  y.style.display = "block";
+}
+
+ 

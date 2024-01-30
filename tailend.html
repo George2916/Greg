@@ -20,11 +20,12 @@
 
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a><span class="fontGAG">Tail End (1979)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+      <a><span class="fontGAG">Tail End (1979)</span></a>
     </div>
   </nav>  
 
-  <div class="gallery-background">
+  <!--.AAA will be visible in screens 767px and wider-->
+  <div class="gallery-background AAA">
 
     <div class="text-center">
       <span class="font"><i>Click on pages to move back and forth.</i></span>      
@@ -53,9 +54,60 @@
           <label for="one"></label>
         </div>
 
-    </div>
+    </div><!-- closes .book -->
 
-  </div>
+  </div><!--closes .AAA -->
+
+  <!--.BBB will be visible in screens under 767px in width-->
+  <div class="gallery-background BBB">
+
+    <div class="text-center CCC">
+      <span class="font"><i>Click on photo to view other pages.</i></span>      
+    </div>
+   
+    <div class="row ">
+    
+      <div class="col-12 col-md-1">
+      </div>
+  
+      <div class="col-12 col-md-10">
+      
+          <div class="pic-front" id="page1of6" onclick="sixPageFirstFlip()">
+          <img class="img-fluid hover" src="images/tailend/p1.jpg">
+          </div>
+          
+          <div class="pic-back" id="page2of6" onclick="sixPageSecondFlip()">
+          <img class="img-fluid hover" src="images/tailend/p2.jpg">
+          </div>
+          
+          <div class="pic-back" id="page3of6" onclick="sixPageThirdFlip()">
+          <img class="img-fluid hover" src="images/tailend/p3.jpg">
+          </div>
+          
+          <div class="pic-back" id="page4of6" onclick="sixPageFourthFlip()">
+          <img class="img-fluid hover" src="images/tailend/p4.jpg">
+          </div>
+          
+          <div class="pic-back" id="page5of6" onclick="sixPageFifthFlip()">
+          <img class="img-fluid hover" src="images/tailend/p5.jpg">
+          </div>
+          
+           <div class="pic-back" id="page6of6" onclick="sixPageUnflip()">
+          <img class="img-fluid hover" src="images/tailend/p6.jpg">
+          </div>
+                  
+      </div>
+                  
+      <div class="col-12 col-md-1">
+      </div>
+      
+    </div> <!--closes row-->     
+
+  </div><!--closes .BBB-->
+  
+  <script src="js/jquery-3.7.0.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/myJavascript.js"></script>
 
 </body>
 </html>
