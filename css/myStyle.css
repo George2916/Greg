@@ -219,3 +219,42 @@ input:checked + .page .back {
   margin-top: -50px;
   padding-bottom: 20px;
 }
+
+/* styling for gregPostModal */
+
+.btn-close:focus {
+	box-shadow: none;
+}
+
+.tabHeading {
+	color: #000000 !important;
+	/* important is need for color because iphones default color is light blue*/
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+	outline: none !important;
+    border: none !important;
+	background: #0080ff;
+	height: 40px;
+	margin: 4px 0px;
+	width: 180px;
+}
+	
+.tabHeading:hover {
+	cursor: grab;
+	font-weight: 900;
+}
+
+.highlightedTab {background: #0000ff;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+	font-weight: 700;
+}
+
+.highlightedTab:focus {
+	outline: none !important;
+    border: none !important;
+}
