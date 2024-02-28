@@ -96,4 +96,22 @@ function sixPageUnflip() {
   y.style.display = "block";
 }
 
+/* activate modal that appears in navbar */
+
+document.getElementsByClassName("tablinkGregPost")[0].click();
+
+function openTabGregPost(evtGregPost, ContentGregPost) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("tabContentGregPost");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinkGregPost");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].classList.remove("highlightedTab");
+  }
+  document.getElementById(ContentGregPost).style.display = "block";
+  evtGregPost.currentTarget.classList.add("highlightedTab");
+}
+
  
