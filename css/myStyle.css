@@ -1,4 +1,3 @@
-
 .font, .fontGAG, .fontGAG1 { 
     font-family: 'Merriweather', var(--bs-body-font-family);
 }
@@ -219,6 +218,7 @@ input:checked + .page .back {
   margin-top: -50px;
   padding-bottom: 20px;
 }
+
 
 /* styling for gregPostModal */
 
