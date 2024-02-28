@@ -98,7 +98,7 @@ function sixPageUnflip() {
 
 /* activate modal that appears in navbar */
 
-document.getElementsByClassName("tablinkGregPost")[0].click();
+ document.getElementsByClassName("tablinkGregPost")[0].click();
 
 function openTabGregPost(evtGregPost, ContentGregPost) {
   var i, x, tablinks;
@@ -113,5 +113,3 @@ function openTabGregPost(evtGregPost, ContentGregPost) {
   document.getElementById(ContentGregPost).style.display = "block";
   evtGregPost.currentTarget.classList.add("highlightedTab");
 }
-
- 
